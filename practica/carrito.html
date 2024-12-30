@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header con el mismo formato que en index.html -->
+    <header>
+        <nav>
+            <div class="nav_inicio">
+                <img src="images/logo.png" alt="Logo" class="logo">
+                <h1 class="Titulo">TIENDA DE ALCOHOL</h1>
+            </div>
+            <div class="nav_links">
+                <a href="index.html" class="icono-inicio">inicio 🏠</a>
+                <a href="carrito.html" class="icono-carrito">carrito 🛒</a>
+                <a href="pages/quienes_somos.html" class="icono_pregunta">Quiénes Somos❓</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <h1>Carrito de Compras</h1>
+        <section id="lista-carrito">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="carrito-body">
+                    <!-- Productos añadidos al carrito se mostrarán aquí -->
+                </tbody>
+            </table>
+        </section>
+        <section id="total">
+            <h2>Total: <span id="total-carrito">$0</span></h2>
+            <button id="vaciar-carrito">Vaciar Carrito</button>
+            <button id="procesar-compra">Procesar Compra</button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Tienda Online</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="js/carrito.js"></script>
+</body>
+</html>
